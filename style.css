@@ -1,0 +1,127 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Rubik+Burned&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Rubik Burned', system-ui;
+    width: 100%;
+    height:100vh ;
+    background: 	#696969;
+    color: darkgray;
+    
+    
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h3{
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    letter-spacing: 1px;
+}
+h5{
+    font-size: 1rem;
+    padding-bottom: 3rem;
+}
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    width: 600px;
+    padding: 30px;
+    border: 2px solid darkgray;
+    border-radius: 5px;
+    box-shadow: 6px 25px 38px 46px rgba(0,0,0,0.1);
+}
+
+.img-card{
+    width:50% ;
+    height: 50%;
+    margin-bottom: 30px;
+}
+.img-card img{
+    background-position: center;
+    background-size: cover;
+}
+.review{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.star, .fa-star-half-stroke{
+    color: darkgray;
+    font-size: 2rem;
+}
+.btn{
+    color: darkgray;
+    font-size: 2rem;
+    width: 45px;
+    height: 45px;
+    max-width: 45px;
+    max-height:45px ;
+    line-height:45px ;
+  border-radius: 50%;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.nextBtn{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+   
+   
+    
+   
+    
+}
+ .prevBtn{
+    position: absolute;
+    top: 10%;
+    right: 4%;
+   
+   
+  
+  
+    
+
+} 
+
+.btn:hover{
+    background-color:darkgray ;
+    color: white;
+ 
+}
+
+@media screen and (max-width: 600px){
+
+    /* .container{
+        width: 300px;
+    } */
+    .card{
+        width: 80%;
+        padding-bottom: 20px;
+    }
+    .nextBtn{
+        top:10% ;
+        right:50px ;
+    }
+    .btn{
+        font-size: 20px;
+    }
+
+}
+
